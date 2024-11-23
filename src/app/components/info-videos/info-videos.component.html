@@ -1,0 +1,30 @@
+<div class="container-fluid mt-5" id="infoVideos" style="background-color: #161616;">
+
+    <div class="container-md p-5">
+        <div class="row pt-5">
+            <h3 class="text-center pb-5 pt-5 h1 text-white" >Videos Destacados</h3>
+        </div>
+        <div class="row">
+            @for(video of data; track $index){
+            <div class="col-sm" (click)="handleActive($index)">
+                <div class="w-100 mb-5 featuredText" [class.isActive]="video.isActive">
+                    <!--Poner acá un fontAwesome-->
+                    <b>{{video.title}}</b>
+                    <p>{{video.description}}</p>
+                </div>
+            </div>
+            }
+        </div>
+        @if(selectedVideo){
+            <div class="row">
+                <div class="col-sm">
+                    <div class="w-100 mb-5">
+                        <iframe width="100%" height="615" [src]="selectedVideo" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

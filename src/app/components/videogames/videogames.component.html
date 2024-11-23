@@ -1,0 +1,58 @@
+<div class="container-fluid" id="juegos">
+    <div class="wrapper">
+        <div class="container">
+            <h2><strong>Mis Juegos<span>( 4 ) <small>te ponen</small></span></strong></h2>
+
+            <div class="cards">
+                <figure class="card">
+                    <img src="./lumberjack.jpg" (click)="openModal()" />
+                    <figcaption style="background: rgba(0, 0, 0, 0.8);">Lumberjack</figcaption>
+
+                </figure>
+                <figure class="card">
+                    <img src="https://steamcdn-a.akamaihd.net/steam/apps/1334590/capsule_616x353.jpg" />
+                    <figcaption style="background: rgba(0, 0, 0, 0.8);">Furry Love</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="silksong.jpg" />
+                    <figcaption style="background: rgba(0, 0, 0, 0.8);">Silksongn't 🤡</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="./halflife.webp" />
+                    <figcaption style="background: rgba(0, 0, 0, 0.8);">Half Life 3n't</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="container">
+            <h2><strong>Lo nuevo</strong></h2>
+
+            <div class="news">
+                <figure class="article">
+                    <img src="./arcane.jpeg" width="100%" />
+                    <figcaption>
+                        <h3>Finaliza Arcane!</h3>
+                        <p>
+                            La segunda temporada de Arcane ha finalizado.
+                            No te pierdas la oportunidad de verla en Netflix.<br>
+                            No entres al lol, es una trampa.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="article">
+                    <img src="./2b.webp" />
+                    <figcaption>
+                        <h3>2b en Stellar Blade!</h3>
+                        <p>
+                            CHICHOTAS ASÍ DE GRANDES PETERRRRRRRRRRR
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@if(isModalOpen){
+<app-game (close)="closeModal()" />
+}

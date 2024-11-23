@@ -1,0 +1,23 @@
+
+.mainContainer {
+    background-color: #F4F7FC;
+}
+
+/* Agrega un poco de estilo a los botones */
+.btn-dark {
+    transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #555;
+}
+
+/* Estilo de imagen */
+.carousel-image {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+

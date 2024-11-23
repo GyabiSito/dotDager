@@ -1,0 +1,28 @@
+.card {
+    border-radius: 10px;
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+.text-muted {
+    color: #8d8d8d !important;
+}
+
+.bg-dark {
+    background-color: #161616 !important;
+}
+
+.darkBlue{
+    background: linear-gradient(to right, #241d31, #0d0d2b);
+    color:white;
+}

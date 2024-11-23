@@ -1,0 +1,33 @@
+<div class="container-fluid py-5 bg-dark text-light" id="misServicios">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <h2 class="fw-bold">Mis Servicios</h2>
+        <p class="fst-italic text-secondary mt-2">
+          "Me encantan los pepinos, el mate y estar en calzones."
+        </p>
+        <p class="text-secondary fst-italic">- Dot Dager</p>
+      </div>
+      <div class="row">
+        @for(service of data; track $index){
+         
+          <div class="col-md-4">
+            <div class="card darkBlue text-light shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                <div class="icon mb-3">
+                  <i class="bi bi-layout-text-sidebar fs-1 text-primary"></i>
+                </div>
+                <h5 class="card-title fw-bold">{{service.title}}</h5>
+                <p class="card-text text-muted">
+                  {{service.description}}
+                </p>
+                <a href="https://www.youtube.com/@DotDager" class="text-primary text-decoration-none fw-bold">
+                  SABER MÁS <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+  
