@@ -29,8 +29,8 @@ export class MainCarouselComponent {
   loadCarousel() {
     this.slides = [
       { src: './img1.png', title: 'Dot Dagger', h1: 'Dot Dagger', p: 'Hola, soy Dagger. Me encantan los pepinos bien duros, golosos y mojados. Además de la programacion y estar en pelotas. Sobretodo estar en bolas con pepinos.' },
-      { src: './daggerimage.png', title: 'Slide 2', h1: 'Estoy Mamadísimo', p: 'UwU' },
-      { src: './img4.jpg', title: 'Slide 3', h1: 'Pan', p: 'COMETE ÉSTA' },
+      { src: './guitarra.jpg', title: 'Guitarra', h1: 'Me gusta la guitarrear la tuya', p: 'Desde que tengo pepino, las guitarras me apasionan. ' },
+      { src: './img9.png', title: 'Filosofía', h1: 'Filosofea con ésta', p: 'Además, la filosofía esta muy presente en mi vida. Todo se debe al cuestionamiento de: ¿Porque tengo pepino?...' },
     ];
   }
 
